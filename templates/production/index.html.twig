@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    {#    {{ dump(params) }}#}
+    <form method="post">
+        <input type="text" name="name" value="" placeholder="Название">
+        <br>
+        <label>
+        <textarea name="description" rows="5" cols="20" placeholder="Описание продукта"></textarea>
+        </label>
+        <br>
+        <input type="text" name="price" value="" placeholder="Стоимость">
+        <br>
+        <input type="submit" name="submit" value="Отправить">
+    </form>
+{% endblock %}
