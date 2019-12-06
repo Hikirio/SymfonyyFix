@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="27aa95ba-973f-4601-be9e-60d547cb5f16" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable path="composer" />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1UbmsYtEuMXbXOfabQokiMmGkbh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="/usr/bin/php7.3" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="27aa95ba-973f-4601-be9e-60d547cb5f16" name="Default Changelist" comment="" />
+      <created>1575633875515</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575633875515</updated>
+      <workItem from="1575633877105" duration="4912000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="303" y="47" key="#CLI_Interpreters" timestamp="1575634399846">
+      <screen x="65" y="24" width="1301" height="744" />
+    </state>
+    <state x="303" y="47" key="#CLI_Interpreters/65.24.1301.744@65.24.1301.744" timestamp="1575634399846" />
+    <state x="315" y="44" key="#Composer" timestamp="1575633953387">
+      <screen x="65" y="24" width="1301" height="744" />
+    </state>
+    <state x="315" y="44" key="#Composer/65.24.1301.744@65.24.1301.744" timestamp="1575633953387" />
+    <state x="315" y="44" key="#Notifications" timestamp="1575637110761">
+      <screen x="65" y="24" width="1301" height="744" />
+    </state>
+    <state x="315" y="44" key="#Notifications/65.24.1301.744@65.24.1301.744" timestamp="1575637110761" />
+    <state x="315" y="44" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575636664177">
+      <screen x="65" y="24" width="1301" height="744" />
+    </state>
+    <state x="315" y="44" key="#com.intellij.execution.impl.EditConfigurationsDialog/65.24.1301.744@65.24.1301.744" timestamp="1575636664177" />
+    <state x="446" y="175" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1575637062719">
+      <screen x="65" y="24" width="1301" height="744" />
+    </state>
+    <state x="446" y="175" key="#com.intellij.fileTypes.FileTypeChooser/65.24.1301.744@65.24.1301.744" timestamp="1575637062719" />
+    <state x="453" y="132" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1575635611942">
+      <screen x="65" y="24" width="1301" height="744" />
+    </state>
+    <state x="453" y="132" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/65.24.1301.744@65.24.1301.744" timestamp="1575635611942" />
+    <state x="440" y="295" key="ComposerInitDialogKey" timestamp="1575635713410">
+      <screen x="65" y="24" width="1301" height="744" />
+    </state>
+    <state x="440" y="295" key="ComposerInitDialogKey/65.24.1301.744@65.24.1301.744" timestamp="1575635713410" />
+    <state x="503" y="147" key="FileChooserDialogImpl" timestamp="1575638676836">
+      <screen x="65" y="24" width="1301" height="744" />
+    </state>
+    <state x="503" y="147" key="FileChooserDialogImpl/65.24.1301.744@65.24.1301.744" timestamp="1575638676836" />
+    <state x="571" y="277" key="Github.ShareDialog" timestamp="1575638881944">
+      <screen x="65" y="24" width="1301" height="744" />
+    </state>
+    <state x="571" y="277" key="Github.ShareDialog/65.24.1301.744@65.24.1301.744" timestamp="1575638881944" />
+    <state x="209" y="24" key="SettingsEditor" timestamp="1575638677464">
+      <screen x="65" y="24" width="1301" height="744" />
+    </state>
+    <state x="209" y="24" key="SettingsEditor/65.24.1301.744@65.24.1301.744" timestamp="1575638677464" />
+  </component>
+</project>
