@@ -1,18 +1,50 @@
 <?php
 
 
-namespace App\Service;
+namespace App\Service {
 
 
-use Doctrine\ORM\EntityManagerInterface;
+    use Symfony\Component\HttpFoundation\Request;
+    use App\Entity\Product;
+    use App\Form\ProductType;
+    use Doctrine\ORM\EntityManagerInterface;
 
-class BaseService
-{
-    protected $em;
 
-    public function __construct(EntityManagerInterface $em)
+    class BaseService
     {
-        $this->em = $em;
-    }
+        protected $em;
 
+        /**
+         * BaseService constructor.
+         * @param EntityManagerInterface $em
+         */
+        public function __construct(EntityManagerInterface $em)
+        {
+            $this->em = $em;
+        }
+
+
+        public function getAllProducts()
+        {
+            return $this
+                ->em
+                ->getRepository(Product::class)
+                ->findAll();
+        }
+
+        public function showById(Product $product)
+        {
+            return $this->em
+                ->getRepository(Product::class)
+                ->find($product);
+        }
+
+        public function editProduct(Product $product)
+        {
+            $this->em
+                ->getRepository(Product::class)
+                ->find($product);
+            return $product;
+        }
+    }
 }
