@@ -11,6 +11,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Service\BaseService;
+
 /**
  * @Route("/product")
  */
@@ -28,6 +29,7 @@ class ProductController extends AbstractController
     /**
      *
      * @Route("/", name="product_index", methods={"GET"})
+     *
      * @return Response
      */
     public function index()
@@ -38,17 +40,20 @@ class ProductController extends AbstractController
                 ->getAllProducts()
         ]);
     }
+
     /**
-     * @Route("/{id}", name="product_show", methods={"GET"})
+     * @Route("/{id}", name="product_show", methods={"GET"}, requirements={"id":"\d+"})
+     *
      * @param Product $product
+     *
      * @return Response
      */
     public function show(Product $product): Response
     {
         return $this->render('product/show.html.twig', [
             'product' => $this
-            ->baseServise
-            ->showById($product)
+                ->baseServise
+                ->showById($product)
         ]);
     }
 
@@ -63,24 +68,21 @@ class ProductController extends AbstractController
         $form = $this->createForm(ProductType::class, $product);
         $form->handleRequest($request);
 
-        if ($form->isSubmitted() && $form->isValid()) {
-            $entityManager = $this->getDoctrine()->getManager();
-            $entityManager->persist($product);
-            $entityManager->flush();
-
-            return $this->redirectToRoute('product_index');
-        }
 
         return $this->render('product/new.html.twig', [
-            'product' => $product,
+            'product' => $this->baseServise
+                ->createProduct($product),
             'form' => $form->createView(),
+
         ]);
     }
 
     /**
      * @Route("/{id}/edit", name="product_edit", methods={"GET","POST"})
+     *
      * @param Request $request
      * @param Product $product
+     *
      * @return Response
      */
     public function edit(Request $request, Product $product): Response
@@ -97,7 +99,7 @@ class ProductController extends AbstractController
         return $this->render('product/edit.html.twig', [
             'form' => $form->createView(),
             'product' => $this->baseServise
-            ->editProduct($product)
+                ->editProduct($product)
         ]);
     }
 
@@ -111,12 +113,8 @@ class ProductController extends AbstractController
      */
     public function delete(Request $request, Product $product): Response
     {
-        if ($this->isCsrfTokenValid('delete' . $product->getId(), $request->request->get('_token'))) {
-            $entityManager = $this->getDoctrine()->getManager();
-            $entityManager->remove($product);
-            $entityManager->flush();
-        }
-
-        return $this->redirectToRoute('product_index');
+        $this->baseServise->delProduct($product);
+        return $this->redirectToRoute('product_index', [
+        ]);
     }
 }

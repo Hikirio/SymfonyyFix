@@ -46,5 +46,19 @@ namespace App\Service {
                 ->find($product);
             return $product;
         }
+
+        public function delProduct($product)
+        {
+            $this->em->remove($product);
+            $this->em->flush();
+            return $product;
+        }
+
+        public function createProduct($product)
+        {
+            $this->em->persist($product);
+            $this->em->flush();
+            return $product;
+        }
     }
 }
